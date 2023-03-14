@@ -8,21 +8,11 @@
 
 // const result = 20 && 30 && 0 && 'Hello';
 
-// console.log(result);
-
 //* || - запинається на правді
 //* Якщо операнд був преведенний до true, то повертається значення цього операнду.
 //* Якщо всі операнди були приведені до false, то повертається останній.
 
-// const userName = prompt('Ваш вік');
-
-// const greet = `Hello ${userName || 'anonymus'}`;
-
-// console.log(greet);
-
 //* ! - інвертує правду до брехні, а брехню до правди
-
-// console.log(!'Hello');
 
 //? Логічні оператори
 // console.log(true && 3);
