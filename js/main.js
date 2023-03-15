@@ -6,12 +6,6 @@
 // тіло if
 // }
 
-// const num = 10;
-
-// if (num > 5) {
-//   console.log('Умова вірна');
-// }
-
 /*
 ? Дано рядок, що складається із символів, наприклад, 'abcde'.
 ? Перевірте, що першим символом цього рядка є буква 'a'.
@@ -19,23 +13,11 @@
 */
 // const str = 'abcde';
 
-// if (str.startsWith('ab')) {
-//   console.log('так');
-// } else {
-//   console.log('ні');
-// }
-
 /*
 ? Запросіть у користувача число, якщо число дорівнює 10,
 ? то виведіть 'Вірно', інакше виведіть 'Невірно'.
 */
 // const userNumber = Number(prompt('Введіть якесь число'));
-
-// if (userNumber === 10) {
-//   console.log('Вірно');
-// } else {
-//   console.log('Не вірно');
-// }
 
 /*
 ? У змінній min лежить число від 0 до 59.
@@ -47,31 +29,13 @@
 */
 // const min = 20;
 
-// if (min >= 0 && min < 15) {
-//   console.log('перша чверть години');
-// } else if (min >= 15 && min < 30) {
-//   console.log('друга чверть години');
-// } else if (min >= 30 && min < 45) {
-//   console.log('третя чверть години');
-// } else if (min >= 45 && min < 60) {
-//   console.log('четверта чверть години');
-// } else {
-//   console.log('Некоректна кількість хвилин');
-// }
-
 /*
 ? Напишіть код, який запитуватиме:
 ? 'Яка «офіційна» назва JavaScript?'
 ? Якщо користувач вводить ECMAScript,
 ? то показати: «Вірно!», інакше – відобразити: «Не знаєте? ECMAScript!»
 */
-// const userInput = prompt('Яка «офіційна» назва JavaScript?').toLowerCase();
-
-// if (userInput === 'ecmascript') {
-//   console.log('Вірно');
-// } else {
-//   console.log('Не знаєте? ECMAScript!');
-// }
+// const userInput = prompt('Яка «офіційна» назва JavaScript?');
 
 /*
 ? Напишіть код, який отримує число через prompt, а потім виводить у console.log:
@@ -81,14 +45,6 @@
 ? Передбачається, що користувач вводить лише цифри.
 */
 // const userNumber = Number(prompt('Введіть число'));
-
-// if (userNumber > 0) {
-//   console.log(1);
-// } else if (userNumber < 0) {
-//   console.log(-1);
-// } else {
-//   console.log(0);
-// }
 
 /*
  * Switch case
@@ -109,27 +65,6 @@
 
 // const num = 12;
 
-// switch (num) {
-//   case 1: {
-//     console.log('У вас число 1');
-//     break;
-//   }
-
-//   case 10: {
-//     console.log('У вас число 10');
-//     break;
-//   }
-
-//   case 5: {
-//     console.log('У вас число 5');
-//     break;
-//   }
-
-//   default: {
-//     console.log('Число не підійшло');
-//   }
-// }
-
 /*
 ?  Перепишіть код за допомогою однієї конструкції switch:
 */
@@ -146,28 +81,6 @@
 //   alert('Ви ввели якесь інше число');
 // }
 
-// switch (number) {
-//   case 0: {
-//     alert('Ви ввели число 0');
-//     break;
-//   }
-
-//   case 1: {
-//     alert('Ви ввели число 1');
-//     break;
-//   }
-
-//   case 2:
-//   case 3: {
-//     alert('Ви ввели число 2, а може і 3');
-//     break;
-//   }
-
-//   default: {
-//     alert('Ви ввели якесь інше число');
-//   }
-// }
-
 /*
  * Тернарний оператор
  */
@@ -179,7 +92,6 @@
 */
 // const a = 4;
 // const b = 1;
-// const result = a + b < 4 ? 'Мало' : 'Багато';
 
 // if (a + b < 4) {
 //   result = 'Мало';
@@ -194,14 +106,7 @@
 */
 
 // const login = 'Директор';
-// const message =
-//   login === 'Співробітник'
-//     ? 'Привіт'
-//     : login === 'Директор'
-//     ? 'Вітаю'
-//     : login === ''
-//     ? 'Немає логіну'
-//     : '';
+// let message
 
 // if (login === 'Співробітник') {
 //   message = 'Привіт';

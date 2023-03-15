@@ -10,39 +10,15 @@
 // код, тіло цикла (statement)
 // }
 
-// let iterator = 0;
-
-// while (iterator < 10) {
-//   console.log(iterator);
-//   iterator = iterator + 1;
-// }
-
 /*
 ? Виведіть числа від 1 до 50
 */
 // let iterator = 1;
 
-// while (iterator < 50) {
-//   console.log(iterator);
-
-//   iterator = iterator + 1;
-// }
-
 /*
 ? Знайдіть суму чисел від 1 до 100
  */
 // let iterator = 1;
-// let result = 0;
-
-// while (iterator <= 100) {
-//   //result = result + iterator;
-//   result += iterator;
-
-//   //iterator = iterator + 1;
-//   iterator += 1;
-// }
-
-// console.log(result);
 
 /*
 ? Дано число n = 1000.
@@ -53,17 +29,6 @@
 // let n = 1000;
 // let num = 0;
 
-// while (n / 2 >= 50) {
-//   // num = num + 1
-//   num += 1;
-
-//   // n = n / 2;
-//   n /= 2;
-// }
-
-// console.log(num);
-// console.log(n);
-
 /*
  * Do While
  */
@@ -71,31 +36,13 @@
 // statement
 // } while (condition);
 
-// do {
-//   console.log('block do');
-// } while (false);
-
 /*
 ? Напишіть цикл, який пропонує в prompt ввести число більше 100.
 ? Якщо відвідувач ввів інше число – попросити ввести ще раз.
 ? Цикл повинен запитувати число, поки відвідувач не введе число, більше 100.
 ? Передбачається, що відвідувач вводить лише числа;
 */
-// let number = Number(prompt('Введіть число більше 100'));
-
-// while (number <= 100) {
-//   number = Number(prompt('Введіть число більше 100'));
-// }
-
-// console.log(number);
-
-// let number;
-
-// do {
-//   number = Number(prompt('Введіть число більше 100'));
-// } while (number <= 100);
-
-// console.log(number);
+// let number
 
 /*
  * For
@@ -104,25 +51,9 @@
 //   statements
 // }
 
-// let num = 0;
-// let n;
-
-// for (n = 1000; n / 2 >= 50; n /= 2) {
-//   num += 1;
-// }
-
-// console.log(n);
-// console.log(num);
-
 /*
 ? За допомогою циклу for виведіть парні числа від 2 до 10.
 */
-
-// for (let i = 2; i <= 10; i += 1) {
-//   if (i % 2 === 0) {
-//     console.log(i);
-//   }
-// }
 
 /*
 ? Напишіть програму, яка виводить через console.log усі числа від 1 до 100, з трьома винятками.
@@ -130,36 +61,6 @@
 ? а для чисел, що діляться на 5 – 'Buzz'.
 ? Для чисел які кратні 3 та 5 = 'FizzBuzz'
 */
-
-// 1 Варіант
-// for (let i = 1; i <= 100; i += 1) {
-//   if (i % 3 === 0 && i % 5 === 0) {
-//     console.log('FizzBuzz');
-//   } else if (i % 3 === 0) {
-//     console.log('Fizz');
-//   } else if (i % 5 === 0) {
-//     console.log('Buzz');
-//   } else {
-//     console.log(i);
-//   }
-// }
-
-// 2 Варіант
-// for (let i = 1; i <= 100; i += 1) {
-//   let str = '';
-
-//   if (i % 3 === 0) {
-//     // str = str + 'Fizz';
-//     str += 'Fizz';
-//   }
-
-//   if (i % 5 === 0) {
-//     // str = str + 'Fizz';
-//     str += 'Buzz';
-//   }
-
-//   console.log(str || i);
-// }
 
 /*
  ? Виведіть методом console.log() зірочки від 1 до 7 штук у вигляді трикутника таким чином:
@@ -171,13 +72,3 @@
  ? ******
  ? *******
  */
-
-// for (let i = 0, star = ''; i < 7; i += 1) {
-//   star += '*';
-
-//   console.log(star);
-// }
-
-// for (let star = '*'; star.length < 7; star += '*') {
-//   console.log(star);
-// }
