@@ -21,31 +21,3 @@
 //     'Jackson Ballard',
 //   ],
 //   adult: false,
-
-//   changeTitle(newTitle) {
-//     this.title = newTitle;
-//   },
-
-//   addActor(newActor) {
-//     this.actors.push(newActor);
-//   },
-
-//   updateRating(newRating) {
-//     this.rating = newRating;
-//   },
-
-//   isAdult() {
-//     return this.adult;
-//   },
-// };
-
-// filmDuna.changeTitle('Venom');
-// console.log(filmDuna);
-
-// filmDuna.addActor('Chad');
-// console.log(filmDuna);
-
-// filmDuna.updateRating(8);
-// console.log(filmDuna);
-
-// console.log(filmDuna.isAdult());
