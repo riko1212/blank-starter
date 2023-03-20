@@ -2,7 +2,7 @@
 ? Перепиши функцію так, щоб вона приймала один об'єкт параметрів,
 ? замість набору незалежних аргументів.
 */
-// function calcBMI({ weight, height }) {
+// function calcBMI( weight, height ) {
 //   const numericWeight = Number(weight.replace(',', '.'));
 //   const numericHeight = Number(height.replace(',', '.'));
 
@@ -38,7 +38,7 @@
 ? Перепиши функцію так, щоб вона приймала один об'єкт параметрів,
 ? замість набору незалежних аргументів.
 */
-// function printContactsInfo({ names, phones }) {
+// function printContactsInfo( names, phones ) {
 //   const nameList = names.split(',');
 //   const phoneList = phones.split(',');
 
@@ -63,11 +63,7 @@
 ? Перепиши функцію так, щоб вона приймала один об'єкт параметрів,
 ? замість набору незалежних аргументів.
 */
-// function getBotReport(obj) {
-//   const {
-//     companyName,
-//     bots: { repair: repairBots, defence: defenceBots },
-//   } = obj;
+// function getBotReport(companyName, repairBots, defenceBots) {
 
 //   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
 // }
@@ -92,16 +88,6 @@
 */
 
 // function getStockReport(obj) {
-//   const { companyName, stock } = obj;
-
-//   const stockValues = Object.values(stock);
-//   let total = 0;
-
-//   for (const value of stockValues) {
-//     total += value;
-//   }
-
-//   return `${companyName} has ${total} items in stock`;
 // }
 
 // console.log(
@@ -152,19 +138,6 @@
 /*
 ? Напиши функцію transformUsername(user) так, щоб вона повертала новий об'єкт із властивістю fullName, замість firstName та lastName.
 */
-
-// function transformUsername(user) {
-//   const { firstName, lastName, ...otherProps } = user;
-
-//   //   console.log('user: ', user);
-//   //   console.log('firstName: ', firstName);
-//   //   console.log('lastName: ', lastName);
-//   //   console.log('otherProps: ', otherProps);
-
-//   const newUser = { ...otherProps, fullName: `${firstName} ${lastName}`, createdAt: new Date() };
-
-//   return newUser;
-// }
 
 // console.log(
 //   transformUsername({

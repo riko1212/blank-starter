@@ -15,16 +15,6 @@
 //   isAdmin: true,
 // };
 
-// const firstName = user.firstName;
-// const lastName = user.lastName;
-// const userAge = user.age;
-// const isAdmin = user.isAdmin || false
-// const { lastName, age: userAge, firstName, isAdmin = false } = user;
-// const { lastName, age: userAge, ...otherProps } = user;
-
-// console.log('user: ', user);
-// console.log(lastName, userAge);
-// console.log(otherProps);
 /*
  * Глибока деструктуризація об'єктів
  */
@@ -38,26 +28,9 @@
 //   },
 // };
 
-// const {
-//   number,
-//   flag,
-//   employees,
-//   langs: { original, secondary },
-// } = team;
-
-// console.log(teamLangs, original, secondary);
-
 /*
  * Деструктуризація масивів
  */
 // const names = ['Herbert Todd', 'Belle Soto', 'Roger Marsh', 'Ethan Lindsey'];
 
 // const rgb = [210, 100, 50];
-
-// const red = rgb[0];
-// const green = rgb[1];
-// cont blue = rgb[2];
-
-// const [red, green, blue] = rgb;
-
-// console.log(blue);
