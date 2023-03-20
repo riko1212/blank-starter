@@ -2,57 +2,30 @@
  * Стрілочні функції, явне - неявне повернення, arguments, повернення об`єкта
  */
 //? Два і більше параметрів
-// const sum = (a, b) => {
-//   return a + b;
-// };
-
-// console.log(sum(10, 20));
 
 //? Один параметр
-// const greet = username => {
-//   console.log(`Hello ${username}`);
-// };
-
-// greet('Oleksii');
 
 //? Без параметрів
-// const greet = () => {
-//   console.log('Hello!');
-// };
-
-// greet();
 
 //? arguments
-// const sum = (...args) => {
-//   let total = 0;
-
-//   for (const number of args) {
-//     total += number;
-//   }
-
-//   return total;
-// };
-
-// console.log(sum(1, 2, 3, 4, 5));
 
 //? Неявне повернення
-// const updateUser = user => ({ id: Date.now(), ...user });
-
-// console.log(updateUser({ firstName: 'Oleksii', lastName: 'Repin' }));
 
 //? Явне повернення
 
 /*
 ? Виконайте рефакторинг коду за допомогою стрілочних функцій.
 */
-// const createProduct = (partialProduct, callback) => {
+// const createProduct = function (partialProduct, callback) {
 //   const product = { id: Date.now(), ...partialProduct };
 
 //   callback(product);
 // };
 
-// const logProduct = product => console.log(product);
-// const logTotalPrice = product => {
+// const logProduct = function(product) {
+// console.log(product);
+// }
+// const logTotalPrice = function(product) {
 //   console.log(product.price * product.quantity);
 // };
 
@@ -94,9 +67,11 @@
 //   },
 // };
 
-// const handleSuccess = message => console.log(`✅ Success! ${message}`);
+// const handleSuccess = function(message) {
+// console.log(`✅ Success! ${message}`);
+// }
 
-// const handleError = message => {
+// const handleError = function(message) {
 //   console.log(`❌ Error! ${message}`);
 // };
 
@@ -109,9 +84,10 @@
 // account.deposit(600, handleSuccess, handleError);
 
 /*
+?Інлайнові колбеки
 ? Виконайте рефакторинг коду за допомогою стрілочних функцій.
 */
-// const each = (array, callback) => {
+// const each = function(array, callback) {
 //   const newArr = [];
 
 //   for (const el of array) {
@@ -127,11 +103,17 @@
 //   })
 // );
 // console.log(
-//   each([64, 49, 36, 25, 16], value => {
-//     return value * 2;
+//   each([64, 49, 36, 25, 16], function(value)  {
+//     return value - 10;
 //   })
 // );
-// console.log(each([64, 49, 36, 25, 16], value => value * 2));
+// console.log(each([64, 49, 36, 25, 16], function(value) {
+// return Math.sqrt(value))
+// });
+
+// console.log(each([64, 49, 36, 25, 16], function(value) {
+// return Math.cell(value))
+// });
 
 // console.log(each([64, 49, 36, 25, 16], value => value - 10));
 // console.log(each([64, 49, 36, 25, 16], value => Math.sqrt(value)));

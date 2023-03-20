@@ -1,11 +1,6 @@
 /*
  * Колбек-функції, функції вищого порядку
  */
-// const greet = function (firstName, callback) {
-//   // firstName = 'Oleksii';
-//   // callback = simpleGreet;
-//   callback(firstName);
-// };
 
 // const prettyGreet = function (username) {
 //   console.log(`Hello ${username} 👋`);
@@ -15,8 +10,8 @@
 //   console.log(`Hello ${firstName}`);
 // };
 
-// greet('Oleksii', simpleGreet);
-// greet('Oleksii', prettyGreet);
+// greet('Andrii', simpleGreet);
+// greet('Andrii', prettyGreet);
 
 //? Запит на сервер
 // const fetchUser = async function (username, callback) {
@@ -34,14 +29,14 @@
 //   console.log(user.avatar_url);
 // };
 
-// fetchUser('olexiy-repin', showInfoAboutUser);
-// fetchUser('olexiy-repin', showAvatar);
+// fetchUser('riko1212', showInfoAboutUser);
+// fetchUser('riko1212', showAvatar);
 
 //? Реєстрація подій на сторінці
 // const userEmailEl = document.querySelector('.js-contact-form-email');
 
 // const logValues = function (event) {
-//   console.log(event.target.value);
+//   console.log('Hi');
 // };
 
 // userEmailEl.addEventListener('blur', logValues);
@@ -50,15 +45,6 @@
 ? Напишіть функцію each(array, callback), яка першим параметром очікує масив, а другим - функцію, яка застосовується до кожного елемента масиву.
 ? Функція each повинна повернути новий масив, елементами якого будуть результати виклику колббека.
 */
-// const each = function (array, callback) {
-//   const newArray = [];
-
-//   for (const item of array) {
-//     newArray.push(callback(item));
-//   }
-
-//   return newArray;
-// };
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -80,23 +66,6 @@
 ? logProduct(product) - коллбек, що приймає об'єкт продукту і логує його в консоль
 ? logTotalPrice(product) - коллбек, що приймає об'єкт продукту і логує загальну вартість товару в консоль
 */
-
-// const createProduct = function (product, callback) {
-//   const newProduct = {
-//     id: Date.now(),
-//     ...product,
-//   };
-
-//   callback(newProduct);
-// };
-
-// const logProduct = function (product) {
-//   console.log(product);
-// };
-
-// const logTotalPrice = function (product) {
-//   console.log(product.price * product.quantity);
-// };
 
 // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 // createProduct({ name: '🍎', price: 30, quantity: 3 }, logTotalPrice);
@@ -122,29 +91,6 @@
 // const account = {
 //   username: 'Jacob',
 //   balance: 400,
-
-//   withdraw(amount, onSuccess, onError) {
-//     if (amount > TRANSACTION_LIMIT) {
-//       onError(`Amount should not exceed ${TRANSACTION_LIMIT} credits`);
-//     } else if (amount > this.balance) {
-//       onError(`Amount can't exceed account balance of ${this.balance} credits`);
-//     } else {
-//       this.balance -= amount;
-//       onSuccess(`Account balance: ${this.balance}`);
-//     }
-//   },
-
-//   deposit(amount, onSuccess, onError) {
-//     if (amount > TRANSACTION_LIMIT) {
-//       onError(`Amount should not exceed ${TRANSACTION_LIMIT} credits`);
-//     } else if (amount <= 0) {
-//       onError(`Amount must be more than 0 credits`);
-//     } else {
-//       this.balance += amount;
-//       onSuccess(`Account balance: ${this.balance}`);
-//     }
-//   },
-// };
 
 // function handleSuccess(message) {
 //   console.log(`✅ Success! Account balance ${message}`);
