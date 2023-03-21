@@ -14,18 +14,13 @@
 //   age: 30,
 
 //   showThis() {
-//     // this = user;
 //     console.log('This --->', this);
 //   },
 
 //   showName() {
-//     // this = user;
 //     console.log(this.name);
 //   },
 // };
-
-// user.showThis();
-// user.showName();
 
 //TODO: Розглянемо як this поводиться у звичайних функціях (суворий, не суворий режим)
 //? Function expression
@@ -66,24 +61,6 @@
 //   age: 30,
 // };
 
-// user.showUserThis = showThis;
-// user.showUserName = showName;
-
-// showThis();
-// user.showUserThis();
-
-// // showName();
-// user.showUserName();
-
-// const anotherUser = {
-//   name: 'Etta Burgess',
-//   age: 40,
-// };
-
-// anotherUser.showUserName = showName;
-
-// anotherUser.showUserName();
-
 //TODO: Виклик методу об'єкта без контексту
 // const user = {
 //   name: 'Luis',
@@ -97,12 +74,6 @@
 //     console.log(this.name);
 //   },
 // };
-
-// const showThis = user.showUserThis;
-// const showName = user.showUserName;
-
-// showThis();
-// showName();
 
 //TODO: This в callback функціях
 // const user = {
@@ -119,7 +90,7 @@
 // };
 
 // const someFunction = function (callback) {
-//   // let callback = user.showUserThis;
+
 //   callback();
 // };
 
@@ -130,20 +101,15 @@
 //   name: 'Luis',
 //   age: 30,
 
-//   changeUserAge(newAge) {
-//     console.log(this);
-
 //     const changeAge = newAge => {
 //       console.log(`this ---->`, this);
 //       this.age = newAge;
 //     };
 
-//     changeAge(newAge);
 //   },
 // };
 
 // user.changeUserAge(40);
-// console.log(user);
 
 /*
 ? Яким буде результат виконання цього коду?
