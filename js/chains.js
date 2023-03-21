@@ -15,18 +15,7 @@
 ? Нехай функція getAvailableCarNames повертає масив моделей автомобілів, але тільки тих, що зараз на розпродажі.
 */
 
-// const getAvailableCarNames = allCars => {
-//   return allCars.filter(el => el.onSale).map(el => el.model);
-// };
-
-// console.log(getAvailableCarNames(cars));
-
 /*
 ? Нехай функція getSortedCarsOnSale повертає масив автомобілів на розпродажі (властивість onSale),
 ? відсортованих за зростанням ціни.
 */
-// const getSortedCarsOnSale = allCars => {
-//   return allCars.filter(el => el.onSale).sort((a, b) => a.price - b.price);
-// };
-
-// console.table(getSortedCarsOnSale(cars));

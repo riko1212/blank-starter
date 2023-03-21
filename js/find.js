@@ -10,10 +10,6 @@
 ? Знайдіть перше непарне число
 */
 // const numbers = [2, 1, 6, 8, 9, 10, 12];
-// const oddNumber = numbers.find(el => el % 2 !== 0);
-
-// console.log('numbers: ', numbers);
-// console.log('oddNumber: ', oddNumber);
 
 /*
 ? Знайдіть автомобіль за моделлю
@@ -31,15 +27,7 @@
 //   { make: 'Ford', model: 'Explorer', type: 'suv', amount: 6, price: 31660, onSale: false },
 // ];
 
-// Повна версія функції getCarByModel
-// const getCarByModel = (allCars, model) => {
-//   return allCars.find((el, idx, arr) => {
-//     return el.model === model;
-//   });
-// };
-
-// Скорочена версія функції getCarByModel
-// const getCarByModel = (allCars, model) => allCars.find(el => el.model === model);
+// const getCarByModel = () => {}
 
 // console.log(getCarByModel(cars, 'F-150'));
 // console.log(getCarByModel(cars, 'CX-9'));

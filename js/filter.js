@@ -10,19 +10,11 @@
 ? Відфільтруйте масив, щоб залишилися тільки парні
 */
 // const numbers = [1, 2, 3, 4, 5, 6];
-// const evenNumbers = numbers.filter(el => el % 2 === 0);
-
-// console.log('numbers: ', numbers);
-// console.log('evenNumbers: ', evenNumbers);
 
 /*
 ? Відфільтруємо масив, залишивши в ньому лише позитивні числа:
 */
 // const numbers = [-2, 5, 1, -5, -1, 1, 0, 3, 4, -1];
-// const positiveNumbers = numbers.filter(el => el >= 0);
-
-// console.log('numbers: ', numbers);
-// console.log('positiveNumbers: ', positiveNumbers);
 
 /*
 ? Відфільтруйте масив heroes за властивістю об'єкта franchise.
@@ -33,13 +25,6 @@
 //   { name: 'Thor', franchise: 'Marvel' },
 //   { name: 'Superman', franchise: 'DC' },
 // ];
-
-// const marvelHeroes = heroes.filter(el => el.franchise.toLowerCase() === 'marvel');
-// const dcHeroes = heroes.filter(el => el.franchise.toLowerCase() === 'dc');
-
-// console.log('heroes: ', heroes);
-// console.log('marvelHeroes: ', marvelHeroes);
-// console.log('dcHeroes: ', dcHeroes);
 
 /*
 ? Нехай функція filterByPrice повертає масив автомобілів ціна яких
@@ -58,47 +43,14 @@
 //   { make: 'Ford', model: 'Explorer', type: 'suv', amount: 6, price: 31660, onSale: false },
 // ];
 
-// Повна версія функції filterByPrice
-// const filterByPrice = (allCars, threshold) => {
-//   return allCars.filter((el, idx, arr) => {
-//     return el.price <= threshold;
-//   });
-// };
-
-// Скорочена версія функції filterByPrice
-// const filterByPrice = (allCars, threshold) => allCars.filter(el => el.price <= threshold);
-
-// console.table(filterByPrice(cars, 25000));
-// console.table(filterByPrice(cars, 30000));
-
 /*
 ? Нехай функція getCarsWithDiscount повертає масив автомобілів властивість onSale яких true.
 */
-// Повна версія функції getCarsWithDiscount
-// const getCarsWithDiscount = allCars => {
-//   return allCars.filter((el, idx, arr) => {
-//     return el.onSale;
-//   });
-// };
-
-// Скорочена версія функції getCarsWithDiscount
-// const getCarsWithDiscount = allCars => allCars.filter(el => el.onSale);
-
-// console.table(getCarsWithDiscount(cars));
 
 /*
 ? Нехай функція getCarsWithType повертає масив автомобілів, тип яких
 ? збігається із значенням параметра type.
 */
-// Повна версія функції getCarsWithType
-// const getCarsWithType = (allCars, type) => {
-//   return allCars.filter((el, idx, arr) => {
-//     return el.type === type;
-//   });
-// };
-
-// Скоречена версія функції getCarsWithType
-// const getCarsWithType = (allCars, type) => allCars.filter(el => el.type === type);
 
 // console.table(getCarsWithType(cars, 'suv'));
 // console.table(getCarsWithType(cars, 'sedan'));

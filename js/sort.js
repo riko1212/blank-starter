@@ -4,33 +4,13 @@
 
 //? Сортування чисел та рядків за замовчуванням
 // const numbers = [3, 7, 2, 8, 1, 45, 58];
-// const newNumbers = [...numbers].sort();
-
-// console.log('numbers: ', numbers);
-// console.log('newNumbers: ', newNumbers);
 
 // const strArr = ['Maggie', 'Amanda', 'Corey', 'Cora', 'Jordan', 'abc'];
-// const newStrArr = [...strArr].sort();
 
-// console.log('strArr: ', strArr);
-// console.log('newStrArr: ', newStrArr);
-
-//? Сортировка чисел и строк по условию
+//? Сортировка чисел та рядків за умовою
 // const numbers = [3, 7, 2, 8, 1, 42, 56];
-// const copyNumbers = [...numbers].sort((a, b) => {
-//   return b - a;
-// });
-
-// console.log('numbers: ', numbers);
-// console.log('copyNumbers: ', copyNumbers);
 
 // const strArr = ['Maggie', 'Amanda', 'Corey', 'Cora', 'Jordan', 'abs'];
-// const copytStrArr = [...strArr].sort((a, b) => {
-//   return a.localeCompare(b);
-// });
-
-// console.log('strArr: ', strArr);
-// console.log('copytStrArr: ', copytStrArr);
 
 /*
 ? Нехай функція sortByAscendingAmount повертає новий масив автомобілів відсортований
@@ -49,34 +29,17 @@
 //   { make: 'Ford', model: 'Explorer', type: 'suv', amount: 6, price: 31660, onSale: false },
 // ];
 
-// Повний запис функції sortByAscendingAmount
-// const sortByAscendingAmount = allCars => {
-//   return [...allCars].sort((a, b) => {
-//     return a.amount - b.amount;
-//   });
-// };
+// const sortByAscendingAmount = (allCars) => {}
 
-// Скорочений запис функції sortByAscendingAmount
-// const sortByAscendingAmount = allCars => [...allCars].sort((a, b) => a.amount - b.amount);
-
-// console.table(cars);
 // console.table(sortByAscendingAmount(cars));
 
 /*
 ? Нехай функція sortByDescendingPrice повертає новий масив автомобілів відсортований
 ? за зменшенням значення властивості price.
 */
-// Повний запис функції sortByDescendingPrice
-// const sortByDescendingPrice = allCars => {
-//   return [...allCars].sort((a, b) => {
-//     return b.price - a.price;
-//   });
-// };
 
-// Скорочений запис функції sortByDescendingPrice
-// const sortByDescendingPrice = allCars => [...allCars].sort((a, b) => b.price - a.price);
+// const sortByDescendingPrice = (allCars) => {}
 
-// console.table(cars);
 // console.table(sortByDescendingPrice(cars));
 
 /*
