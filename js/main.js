@@ -147,12 +147,11 @@
 ? Яким буде результат console.log
 */
 // function makeUser() {
-//   // this = undefined;
 
 //   return {
 //     name: 'Джон',
 //     ref() {
-//       // this = user;
+
 //       return this;
 //     },
 //   };

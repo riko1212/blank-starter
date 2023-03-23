@@ -3,19 +3,11 @@
  */
 
 //* Функції це об'єкти зі своїми властивостями та методами
-// const fn = function () {
-//   console.log('Hello');
-// };
-
-// fn.test = 5;
-// console.dir(fn);
-// console.log(fn.test);
 
 //* call та apply
 //? Викличте функцію showFullName у контексті об'єкта user
 // const showFullName = function (message, number) {
 //   console.log(`${message} ${this.firstName} ${this.lastName}`);
-//   console.log(number);
 // };
 
 // const user = {
@@ -23,9 +15,6 @@
 //   lastName: 'Vasquez',
 //   age: 30,
 // };
-
-// showFullName.call(user, 'Hello', 10);
-// showFullName.apply(user, ['Hello', 10]);
 
 //? Викличте функцію showFullName у контексті об'єкта anotherUser
 // const anotherUser = {
@@ -48,15 +37,6 @@
 //   age: 30,
 // };
 
-// const showUserFullName = function () {
-//   this = user;
-//   console.log(`${this.firstName} ${this.lastName}`);
-// }
-
-// const showUserFullName = showFullName.bind(user);
-
-// showUserFullName();
-
 //* Метод об'єкта у ролі колбека
 
 // const user = {
@@ -73,11 +53,6 @@
 // };
 
 // const someFunction = function (callback) {
-//   // callback = function() {
-//   //   this = user;
-//   //   console.log(`this name is: ${this.name}`);
-//   // }
-
 //   callback();
 // };
 
@@ -131,4 +106,4 @@
 //   },
 // };
 
-// checkPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+// checkPassword(user.loginOk, user.loginFail);

@@ -10,15 +10,7 @@
 //     { name: 'Ruby', price: 800, quantity: 2 },
 //   ],
 
-//   calcTotalPrice(stoneName) {
-//     const findedStone = this.stones.find(stone => stone.name === stoneName);
-
-//     if (findedStone === undefined) {
-//       return 'Такого каменя не знайдено';
-//     }
-
-//     return findedStone.price * findedStone.quantity;
-//   },
+//   calcTotalPrice(stoneName) {},
 // };
 
 // console.log(chopShop.calcTotalPrice('Emerald')); // 5200
@@ -37,11 +29,11 @@
 //     const newContact = {
 //       list: 'default',
 //       ...contact,
-//       id: this.generateId(),
-//       createdAt: this.getDate(),
+//       id: generateId(),
+//       createdAt: getDate(),
 //     };
 
-//     this.contacts.push(newContact);
+//     contacts.push(newContact);
 //   },
 
 //   generateId() {
@@ -59,14 +51,10 @@
 //   list: 'friends',
 // });
 
-// console.log(phonebook.contacts);
-
 // phonebook.add({
 //   name: 'Poly',
 //   email: 'poly@hotmail.com',
 // });
-
-// console.log(phonebook.contacts);
 
 /*
 ? Створіть об'єкт calculator із трьома методами:
@@ -76,31 +64,6 @@
 ? mult() - перемножує збережені значення та повертає результат.
 */
 
-// const calculator = {
-//   read(a, b) {
-//     this.firstNum = a;
-//     this.secondNum = b;
-//   },
-
-//   add() {
-//     return this.firstNum + this.secondNum;
-//   },
-
-//   mult() {
-//     return this.firstNum * this.secondNum;
-//   },
-// };
-
-// console.log(calculator);
-
 // calculator.read(10, 20);
-
-// console.log(calculator);
 // console.log(calculator.add());
 // console.log(calculator.mult());
-
-// calculator.read(40, 30);
-
-// console.log(calculator);
-
-// console.log(calculator.add());
