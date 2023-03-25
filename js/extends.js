@@ -1,12 +1,20 @@
 /*
  * Наслідування з extends та super
  */
-class User {
+class Developer {
   #login;
   #email;
 
-  constructor({ firstName, lastName, age, login, email }) {
+  constructor({
+    countOfProjects,
+    firstName,
+    lastName,
+    age,
+    login,
+    email,
+  } = {}) {
     // this = {}
+    this.countOfProjects = countOfProjects;
     this.firstName = firstName;
     this.lastName = lastName;
     this.userAge = age;
@@ -35,36 +43,55 @@ class User {
     return `${User.trimStr(this.firstName)} ${User.trimStr(this.lastName)}`;
   }
 
-  static trimStr(str) {
+  #trimStr(str) {
     return str.trim();
-  }
-}
-
-class Developer extends User {
-  constructor(developerInfo) {
-    const { countOfProjects, ...otherProps } = developerInfo;
-
-    super(otherProps);
-
-    this.countOfProjects = countOfProjects;
   }
 
   doDeveloperWork() {
-    console.log(`Роблю якусь роботу`);
+    console.log('Роблю роботу');
   }
 }
 
-class Manager extends User {
-  constructor(managerInfo) {
-    const { managerProp, ...otherProps } = managerInfo;
+class Manager {
+  #login;
+  #email;
 
-    super(otherProps);
-
+  constructor({ managerProp, firstName, lastName, age, login, email } = {}) {
+    // this = {}
     this.managerProp = managerProp;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.userAge = age;
+    this.#login = login;
+    this.#email = email;
+    // return this;
   }
 
-  doManagerWork() {
-    console.log(`Роблю якусь роботу`);
+  get login() {
+    return this.#login;
+  }
+
+  set login(newLogin) {
+    this.#login = newLogin;
+  }
+
+  get email() {
+    return this.#email;
+  }
+
+  set email(newEmail) {
+    this.#email = newEmail;
+  }
+
+  getFullName() {
+    return `${User.trimStr(this.firstName)} ${User.trimStr(this.lastName)}`;
+  }
+
+  #trimStr(str) {
+    return str.trim();
+  }
+  doManaerWork() {
+    console.log('Роблю роботу');
   }
 }
 
