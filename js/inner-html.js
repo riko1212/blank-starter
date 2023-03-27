@@ -47,24 +47,9 @@ const titleEl = document.querySelector('.js-title');
 const galleryListEl = document.querySelector('.js-gallery');
 
 // Функція для створення карточки makeGalleryCard(cardInfo)
-const makeGalleryCard = ({ width, height, url, alt } = {}) => {
-  return `
-  <li class="gallery-item">
-    <a href="#">
-      <img src="${url}" alt="${alt}" width="${width}" height="${height}">
-    </a>
-  </li>
-`;
-};
+const makeGalleryCard = ({ width, height, url, alt } = {}) => {};
 
 // Створення масиву рядків із елементами
-const galleryCardsArr = pictures.map((el, idx, arr) => {
-  return makeGalleryCard(el);
-});
-
-console.log(galleryCardsArr);
-console.log(galleryCardsArr.join(''));
 
 // Вставка елементів на сторінку
 // galleryListEl.innerHTML = galleryCardsArr.join('');
-galleryListEl.insertAdjacentHTML('afterbegin', galleryCardsArr.join(''));

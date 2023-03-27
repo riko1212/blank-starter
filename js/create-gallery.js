@@ -39,34 +39,14 @@ const pictures = [
 </li>
 */
 
-const galleryListEl = document.querySelector('.js-gallery');
-
 // Функція для створення карточки makeGalleryCard(cardInfo)
-const makeGalleryCard = ({ width, height, url, alt } = {}) => {
-  // Створення li
-  const galleryItemEl = document.createElement('li');
-  galleryItemEl.classList.add('gallery-item');
 
-  // Створення a
-  const galleryLinkEl = document.createElement('a');
-  galleryLinkEl.href = '#';
+// Створення li
 
-  galleryItemEl.append(galleryLinkEl);
+// Створення a
 
-  // Створення img
-  const galleryImgEl = document.createElement('img');
-  galleryImgEl.src = url;
-  galleryImgEl.alt = alt;
-  galleryImgEl.width = width;
-  galleryImgEl.height = height;
-
-  galleryLinkEl.append(galleryImgEl);
-
-  return galleryItemEl;
-};
+// Створення img
 
 // Перебір масиву pictures через map
-const galleryCardsArr = pictures.map((el) => makeGalleryCard(el));
 
 // Вставка колекції карток на сторінку
-galleryListEl.append(...galleryCardsArr);
