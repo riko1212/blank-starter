@@ -17,22 +17,3 @@ const paintElements = () => {
 };
 
 paintElements();
-
-const onPalletItemClick = (event) => {
-  // console.log('event.target: ', event.target);
-  // console.log('event.currentTarget: ', event.currentTarget);
-  const { target } = event;
-
-  if (target.nodeName !== 'LI') {
-    return;
-  }
-
-  console.dir(target);
-
-  const palletItemColor = target.dataset.elementColor;
-  const outputColorEl = target.querySelector('.js-pallet__item-color');
-
-  outputColorEl.textContent = palletItemColor;
-};
-
-palletEl.addEventListener('click', onPalletItemClick);
