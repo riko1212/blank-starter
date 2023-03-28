@@ -42,27 +42,27 @@ const createCountryCard = ({ name, capital, population, area } = {}) => {
      <li class="country-card__item"><strong>Площадь:</strong> ${area}км<sup>2</sup></li>`;
 };
 
-const searchInputHandler = (event) => {
-  const searchQuery = event.target.value.toLowerCase().trim();
+// const searchInputHandler = (event) => {
+//   const searchQuery = event.target.value.toLowerCase().trim();
 
-  if (searchQuery === '') {
-    outputError.innerHTML = '';
-    countryCardEl.innerHTML = '';
+//   if (searchQuery === '') {
+//     outputError.innerHTML = '';
+//     countryCardEl.innerHTML = '';
 
-    return;
-  }
+//     return;
+//   }
 
-  const country = countries.find((el) => el.name.toLowerCase() === searchQuery);
+//   const country = countries.find((el) => el.name.toLowerCase() === searchQuery);
 
-  if (country === undefined) {
-    outputError.textContent = 'Інформацію по країні не знайдено';
-    countryCardEl.innerHTML = '';
+//   if (country === undefined) {
+//     outputError.textContent = 'Інформацію по країні не знайдено';
+//     countryCardEl.innerHTML = '';
 
-    return;
-  }
+//     return;
+//   }
+``;
+//   outputError.innerHTML = '';
+//   countryCardEl.innerHTML = createCountryCard(country);
+// };
 
-  outputError.innerHTML = '';
-  countryCardEl.innerHTML = createCountryCard(country);
-};
-
-searchInputEl.addEventListener('input', _.debounce(searchInputHandler, 300));
+// searchInputEl.addEventListener('input', _.debounce(searchInputHandler, 300));

@@ -1,53 +1,25 @@
 const galleryEl = document.querySelector('.js-gallery');
 const bannerImgEl = document.querySelector('.js-banner__img');
-const galleryImgEls = document.querySelectorAll('.js-gallery__img');
+const galleryImgEls = document.querySelectorAll('.gallery__img');
 
-galleryImgEls.forEach((el) => {
-  el.addEventListener(
-    'load',
-    (event) => {
-      event.target.classList.add('appear');
-    },
-    {
-      once: true,
-    }
-  );
-});
+// const addSrcAttrToImg = () => {
+//   galleryImgEls.forEach((el) => {
+//     el.src = el.dataset.src;
+//   });
+// };
 
-const onGalleryImgClick = (event) => {
-  event.preventDefault();
+// const createLazySizesScript = () => {
+//   const script = document.createElement('script');
 
-  const { target } = event;
+//   script.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js';
 
-  if (target.nodeName !== 'IMG') {
-    return;
-  }
+//   return script;
+// };
 
-  const largeImagePath = target.dataset.bannerUrl;
-
-  bannerImgEl.src = largeImagePath;
-};
-
-galleryEl.addEventListener('click', onGalleryImgClick);
-
-const addSrcAttrToImg = () => {
-  galleryImgEls.forEach((el) => {
-    el.src = el.dataset.src;
-  });
-};
-
-const createLazySizesScript = () => {
-  const script = document.createElement('script');
-
-  script.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js';
-
-  return script;
-};
-
-if ('loading' in HTMLImageElement.prototype) {
-  console.log('Атрибут loading підтримується');
-  addSrcAttrToImg();
-} else {
-  console.log('Атрибут loading не підтримується');
-  document.body.append(createLazySizesScript());
-}
+// if ('loading' in HTMLImageElement.prototype) {
+//   console.log('Атрибут loading підтримується');
+//   addSrcAttrToImg();
+// } else {
+//   console.log('Атрибут loading не підтримується');
+//   document.body.append(createLazySizesScript());
+// }

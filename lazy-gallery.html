@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lazy gallery</title>
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/lazy-gallery.css" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/lazy-gallery.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -21,271 +21,251 @@
       <div class="container">
         <div class="banner">
           <img
-            src="./images/banner-01.jpg"
+            class="banner__img js-banner__img"
+            src="./images/banner-01.jpeg"
             alt="banner"
             width="600"
             height="300"
-            class="banner__img js-banner__img"
           />
         </div>
         <ul class="gallery js-gallery list">
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-01.jpg"
-                data-banner-url="./images/banner-01.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-01.jpeg"
+                src="./images/img-01.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-02.jpg"
-                data-banner-url="./images/banner-02.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-02.jpeg"
+                src="./images/img-02.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-03.jpg"
-                data-banner-url="./images/banner-03.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-03.jpeg"
+                src="./images/img-03.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-04.jpg"
-                data-banner-url="./images/banner-04.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-04.jpeg"
+                src="./images/img-04.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-05.jpg"
-                data-banner-url="./images/banner-05.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-05.jpeg"
+                src="./images/img-05.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-06.jpg"
-                data-banner-url="./images/banner-06.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-06.jpeg"
+                src="./images/img-06.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-07.jpg"
-                data-banner-url="./images/banner-07.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-07.jpeg"
+                src="./images/img-07.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-08.jpg"
-                data-banner-url="./images/banner-08.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-08.jpeg"
+                src="./images/img-08.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-09.jpg"
-                data-banner-url="./images/banner-09.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-09.jpeg"
+                src="./images/img-09.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-10.jpg"
-                data-banner-url="./images/banner-10.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-10.jpeg"
+                src="./images/img-10.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-11.jpg"
-                data-banner-url="./images/banner-11.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-11.jpeg"
+                src="./images/img-11.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-12.jpg"
-                data-banner-url="./images/banner-12.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-12.jpeg"
+                src="./images/img-12.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-13.jpg"
-                data-banner-url="./images/banner-13.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-13.jpeg"
+                src="./images/img-13.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-14.jpg"
-                data-banner-url="./images/banner-14.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-14.jpeg"
+                src="./images/img-14.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-15.jpg"
-                data-banner-url="./images/banner-15.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-15.jpeg"
+                src="./images/img-15.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-16.jpg"
-                data-banner-url="./images/banner-16.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-16.jpeg"
+                src="./images/img-16.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-17.jpg"
-                data-banner-url="./images/banner-17.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-17.jpeg"
+                src="./images/img-17.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-18.jpg"
-                data-banner-url="./images/banner-18.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-18.jpeg"
+                src="./images/img-18.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-19.jpg"
-                data-banner-url="./images/banner-19.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-19.jpeg"
+                src="./images/img-19.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
           <li class="gallery__item">
-            <a href="#" class="gallery__link">
+            <a class="gallery__link" href="#">
               <img
-                loading="lazy"
-                data-src="./images/img-20.jpg"
-                data-banner-url="./images/banner-20.jpg"
+                class="gallery__img"
+                data-banner-url="./images/banner-20.jpeg"
+                src="./images/img-20.jpeg"
                 alt="some image"
                 width="300"
                 height="150"
-                class="gallery__img js-gallery__img lazyload"
               />
             </a>
           </li>
@@ -293,6 +273,6 @@
       </div>
     </section>
 
-    <script type="module" src="./js/lazy-gallery.js"></script>
+    <script src="./js/lazy-gallery.js" type="module"></script>
   </body>
 </html>
