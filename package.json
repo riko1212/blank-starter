@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://olexiy-repin.github.io/bootcamp_23_on-js",
+  "homepage": "https://riko1212.github.io/bc-52-js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /bootcamp_23_on-js/"
+    "build": "parcel build src/*.html --public-url /bc-52-js/"
   },
   "repository": {
     "type": "git",
