@@ -29,4 +29,7 @@ const timer = {
   },
 };
 
-timer.start();
+// this.declensionNum(days, ['день', 'дні', 'днів']);
+// this.declensionNum(hours, ['година', 'години', 'годин']);
+// this.declensionNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
+// this.declensionNum(seconds, ['секунда', 'секунди', 'секунд']);
