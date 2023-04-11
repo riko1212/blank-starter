@@ -1,52 +1,6 @@
 /*
  * Проміси
  */
-// const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     const randomNum = Math.random();
-
-//     if (randomNum > 0.5) {
-//       resolve('All done!');
-//     } else {
-//       reject('Error');
-//     }
-//   }, 2000);
-// });
-
-// console.log(promise);
-
-// // promise.then(
-// //   data => {
-// //     console.log(promise);
-// //     console.log(data);
-// //   },
-// //   err => {
-// //     console.log(promise);
-// //     console.log(err);
-// //   }
-// // );
-
-// promise
-//   .then(data => {
-//     console.log(promise);
-//     console.log(data);
-
-//     data = data + '!!!!!!!!!';
-
-//     userData = data;
-
-//     return data;
-//   })
-//   .then(updateData => {
-//     console.log(updateData);
-//   })
-//   .catch(err => {
-//     console.log(promise);
-//     console.log(err);
-//   })
-//   .finally(() => {
-//     console.log('The End!');
-//   });
 
 //? конструктор new Promise(callback(resolve, reject));
 
@@ -107,5 +61,5 @@
 //     console.log(data);
 //   })
 //   .catch(error => {
-//     console.log(error); // 'error'
+//     console.log(error);
 //   });

@@ -1,30 +1,30 @@
-// https://api.github.com/users/olexiy-repin
-function myAsyncFunction(url) {
-  const promise = new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
+// https://api.github.com/users/riko1212
+// function myAsyncFunction(url) {
+//   const promise = new Promise((resolve, reject) => {
+//     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', url);
-    xhr.send();
+//     xhr.open('GET', url);
+//     xhr.send();
 
-    xhr.addEventListener('load', () => {
-      if (xhr.status !== 200) {
-        reject(xhr.status);
-      } else {
-        resolve(xhr.responseText);
-      }
-    });
-  });
+//     xhr.addEventListener('load', () => {
+//       if (xhr.status !== 200) {
+//         reject(xhr.status);
+//       } else {
+//         resolve(xhr.responseText);
+//       }
+//     });
+//   });
 
-  return promise;
-}
+//   return promise;
+// }
 
-myAsyncFunction('https://api.github.com/users/olexiy-repin')
-  .then(data => {
-    console.log(JSON.parse(data));
-  })
-  .catch(err => {
-    console.log(err);
-  });
+// myAsyncFunction('https://api.github.com/users/riko1212')
+//   .then(data => {
+//     console.log(JSON.parse(data));
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   });
 
 //? Запит за користувачем на колбэках
 // const fetchUserByName = (name, onSuccess, onError) => {
@@ -58,34 +58,3 @@ myAsyncFunction('https://api.github.com/users/olexiy-repin')
 // fetchUserByName('Ida', handleSuccessFetch, handleErrorFetch);
 
 //? Запит за користувачем на промісах
-const fetchUserByName = name => {
-  const promise = new Promise((resolve, reject) => {
-    console.log('Робимо запит на сервер...');
-
-    setTimeout(() => {
-      const isDone = Math.random();
-
-      if (isDone > 0.5) {
-        const user = {
-          firstName: name,
-          lastName: 'Francis',
-          age: 30,
-        };
-
-        resolve(user);
-      } else {
-        reject("Користувача з таким ім'ям не знайдено");
-      }
-    }, 2000);
-  });
-
-  return promise;
-};
-
-fetchUserByName('Ida')
-  .then(data => {
-    console.log(data);
-  })
-  .catch(err => {
-    console.log(err);
-  });
