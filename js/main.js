@@ -100,16 +100,13 @@
 // const user = {
 //   name: 'Luis',
 //   age: 30,
-
-//     const changeAge = newAge => {
-//       console.log(`this ---->`, this);
-//       this.age = newAge;
-//     };
-
+//   changeAge: (newAge) => {
+//     console.log(`this ---->`, this);
+//     this.age = newAge;
 //   },
 // };
 
-// user.changeUserAge(40);
+// user.changeAge(40);
 
 /*
 ? Яким буде результат виконання цього коду?
@@ -170,17 +167,14 @@
 
 //   up() {
 //     this.step += 1;
-//     return this;
 //   },
 
 //   down() {
 //     this.step -= 1;
-//     return this;
 //   },
 
 //   showStep() {
 //     console.log(this.step);
-//     return this;
 //   },
 // };
 
