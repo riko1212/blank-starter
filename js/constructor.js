@@ -53,7 +53,7 @@ const user2 = new User({
 
 console.log(user2);
 
-user1.changeFirstName('Oleksii');
+user1.changeFirstName('Andrii');
 user2.changeFirstName('Marvin');
 
 console.log(user1);
