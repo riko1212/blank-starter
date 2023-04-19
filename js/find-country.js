@@ -36,8 +36,8 @@ const outputError = document.querySelector('.js-output-error');
 const countryCardEl = document.querySelector('.js-country-card');
 
 const createCountryCard = ({ name, capital, population, area } = {}) => {
-  return `<li class="country-card__item"><strong>Страна:</strong> ${name}</li>
-     <li class="country-card__item"><strong>Столица:</strong> ${capital}</li>
-     <li class="country-card__item"><strong>Население:</strong> ${population}</li>
-     <li class="country-card__item"><strong>Площадь:</strong> ${area}км<sup>2</sup></li>`;
+  return `<li class="country-card__item"><strong>Країна:</strong> ${name}</li>
+     <li class="country-card__item"><strong>Столиця:</strong> ${capital}</li>
+     <li class="country-card__item"><strong>Населення:</strong> ${population}</li>
+     <li class="country-card__item"><strong>Площа:</strong> ${area}км<sup>2</sup></li>`;
 };
