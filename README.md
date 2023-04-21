@@ -25,7 +25,7 @@
   - npm-скрипти
     - pre ta post
   - Транспіляція коду
-  - [Banel](https://babeljs.io/)
+  - [Babel](https://babeljs.io/)
   - CLI та npm-скрипти
   - Пресети
   - [Browserlist](https://github.com/browserslist/browserslist)
