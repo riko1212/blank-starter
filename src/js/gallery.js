@@ -1,41 +1,41 @@
 // https://unsplash.com/
+import createGalleryCard from '../templates/gallery-card.hbs';
 import { UnsplashApi } from './unsplash-api';
-import createGalleryCards from '../templates/gallery-card.hbs';
-
-const searchFormEl = document.querySelector('.js-search-form');
-const galleryListEl = document.querySelector('.js-gallery');
-const loadMoreBtnEl = document.querySelector('.js-load-more');
 
 const unsplashApi = new UnsplashApi();
 
-const paintRandomPhotosByPageLoad = () => {
-  unsplashApi
-    .fetchRandomPhotos()
-    .then(response => {
-      const { data } = response;
+const searchFormEl = document.querySelector('.js-search-form');
+const loadMoreBtnEl = document.querySelector('.js-load-more');
+const galleryListEl = document.querySelector('.js-gallery');
 
-      galleryListEl.innerHTML = createGalleryCards(data);
+const onSearchFormSubmit = e => {
+  e.preventDefault();
+  unsplashApi.page = 1;
+  unsplashApi.searchQuery = e.currentTarget.user_search_query.value;
+  unsplashApi
+    .fetchPhotosByQuery()
+    .then(data => {
+      console.log(data.results);
+      galleryListEl.innerHTML = createGalleryCard(data.results);
+      loadMoreBtnEl.classList.remove('is-hidden');
+      loadMoreBtnEl.addEventListener('click', onMoreBtnClick);
     })
     .catch(err => {
       console.log(err);
     });
 };
 
-paintRandomPhotosByPageLoad();
-
-const onLoadMoreBtnElClick = event => {
+const onMoreBtnClick = () => {
   unsplashApi.page += 1;
 
   unsplashApi
     .fetchPhotosByQuery()
-    .then(response => {
-      const { data } = response;
-
-      galleryListEl.insertAdjacentHTML('beforeend', createGalleryCards(data.results));
-
-      if (data.total_pages === unsplashApi.page) {
+    .then(data => {
+      console.log(data.results);
+      galleryListEl.insertAdjacentHTML('beforeend', createGalleryCard(data.results));
+      if (unsplashApi.page === data.total_pages) {
         loadMoreBtnEl.classList.add('is-hidden');
-        loadMoreBtnEl.removeEventListener('click', onLoadMoreBtnElClick);
+        loadMoreBtnEl.removeEventListener('click', onMoreBtnClick);
       }
     })
     .catch(err => {
@@ -43,35 +43,4 @@ const onLoadMoreBtnElClick = event => {
     });
 };
 
-const onSearchFormElSubmit = event => {
-  event.preventDefault();
-
-  unsplashApi.searchQuery = event.currentTarget.elements.user_search_query.value;
-  unsplashApi.page = 1;
-
-  unsplashApi
-    .fetchPhotosByQuery()
-    .then(response => {
-      console.log(response);
-      const { data } = response;
-
-      if (data.total_pages === 0) {
-        return;
-      }
-
-      if (data.total_pages === 1) {
-        galleryListEl.innerHTML = createGalleryCards(data.results);
-
-        return;
-      }
-
-      galleryListEl.innerHTML = createGalleryCards(data.results);
-      loadMoreBtnEl.classList.remove('is-hidden');
-      loadMoreBtnEl.addEventListener('click', onLoadMoreBtnElClick);
-    })
-    .catch(err => {
-      console.log(err);
-    });
-};
-
-searchFormEl.addEventListener('submit', onSearchFormElSubmit);
+searchFormEl.addEventListener('submit', onSearchFormSubmit);

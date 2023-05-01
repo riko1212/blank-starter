@@ -1,34 +1,26 @@
 'use strict';
-import axios from 'axios';
-
 export class UnsplashApi {
-  #BASE_URL = 'https://api.unsplash.com';
-  #API_KEY = 'LxvKVGJqiSe6NcEVZOaLXC-f2JIIWZaq_o0WrF8mwJc';
-
+  #BASE_URL = 'https://api.unsplash.com/search/photos';
+  #API_KEY = 'Xn_eH2Gi-hkj7ulpwwCcpyWldnnOhEEXSryD5-QYcnQ';
   constructor() {
     this.page = null;
     this.searchQuery = '';
+    this.perPage = 10;
   }
 
   fetchPhotosByQuery() {
-    const searchParams = {
+    const searchParams = new URLSearchParams({
       query: this.searchQuery,
       page: this.page,
-      per_page: 12,
-      orientation: 'portrait',
+      per_page: this.perPage,
+      // orientation: 'vertical',
       client_id: this.#API_KEY,
-    };
-
-    return axios.get(`${this.#BASE_URL}/search/photos`, { params: searchParams });
-  }
-
-  fetchRandomPhotos() {
-    const searchParams = {
-      orientation: 'portrait',
-      count: 12,
-      client_id: this.#API_KEY,
-    };
-
-    return axios.get(`${this.#BASE_URL}/photos/random`, { params: searchParams });
+    });
+    return fetch(`${this.#BASE_URL}?${searchParams}`).then(response => {
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+      return response.json();
+    });
   }
 }
